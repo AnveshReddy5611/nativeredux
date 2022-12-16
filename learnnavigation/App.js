@@ -11,7 +11,6 @@ function HomeScreen() {
     </View>
   );
 }
-
 function DetailsScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -23,9 +22,7 @@ function DetailsScreen({ navigation }) {
     </View>
   );
 }
-
 const Stack = createNativeStackNavigator();
-
 function App() {
   return (
     <NavigationContainer>
@@ -36,5 +33,4 @@ function App() {
     </NavigationContainer>
   );
 }
-
 export default App;

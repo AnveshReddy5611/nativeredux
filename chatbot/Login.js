@@ -1,2 +1,2 @@
-import store from '../ChatStore'
+import store from './ChatStore'
 this.state = store.getState();
