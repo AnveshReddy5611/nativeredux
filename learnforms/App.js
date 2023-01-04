@@ -119,17 +119,24 @@ import {
 export default function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [data, setData]=useState({name:email, role:password})
+  const completedata=[]
   const showMessage = () => {
  
     Alert.alert('onPress Called...');
     console.log(email,password)
-  
-  }
+    setData({name:email,role:password})
+    completedata.push(data)
+    console.log(data, " I am data")
+    console.log(completedata, "completedata")
+ }
   return (
     <View style={styles.container}>
       {/* <Image style={styles.image} source={require("./assets/log2.png")} /> */}
  
       <StatusBar style="auto" />
+      <Text>{data.name}, dataname</Text>
+      <Text>{data.role},datarole</Text>
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
